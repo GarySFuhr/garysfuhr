@@ -1,0 +1,390 @@
+header, nav, main, footer { display: block; }
+body { background-color: #320000;
+       font-family: "Palatino Linotype", Palatino, serif;
+}
+
+#intro {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(25, 35, 29, 0.92);
+    border: 2px solid #b99a59;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(185, 154, 89, 0.3);
+}
+
+#intro h2 {
+    font-family: Georgia, serif;
+    font-size: 2em;
+    color: #e4c477;
+    text-align: center;
+    text-shadow: 2px 2px 5px #000;
+}
+
+#intro p {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #f4ead5;
+    text-align: left;
+}
+#wrapper {
+    width: 960px;
+    margin: auto;
+    background-color: #10152E;
+    color: #FFF4D6;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.branding img {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+}
+
+.branding h1 {
+    margin: 0;
+    font-family: Georgia, serif;
+    color: #d4af62;
+    font-size: 2em;
+}
+
+h1 { background-image: url(images/logo.gif);
+     background-repeat: no-repeat;
+     background-color:  #10152E;
+	 height: 110px;
+	 font-family: Georgia, "Times New Roman", serif;
+	 font-size: 4.5em;
+     padding-left: 220px;
+	 padding-top: 20px;
+	 text-shadow: 3px 3px 3px #90745D;
+	 margin-bottom: 0;
+
+        
+}
+nav { padding-top: 10px;
+      width: 100%; 
+}
+nav ul { list-style-type: none; 
+       padding-left: 20px;
+	   display: flex; 
+	   gap: 25px; 
+	 }
+nav li { padding-bottom: 5px;
+       font-weight: bold;
+}
+nav a { text-decoration: none; }
+nav a:link { color: #f5f3f3; }
+nav a:visited{ color: #8f4d17; }
+nav a:hover { color: #435f0e; }
+
+
+main { background-color: #221246;
+          padding: 1px 20px 20px 20px;   
+		  min-height: 300px;
+		  text-align: left;
+}
+main img {
+    display: block;
+    float: none;
+    margin: 20px auto;
+    padding: 0;
+}
+
+
+footer { background-color: #221246;
+       
+       padding: 20px;
+       text-align: center;
+	   font-size: small;
+	   font-style: italic;
+}
+
+#captains-quarters {
+    background-color: #19231d;
+    color: #f4ead5;
+    border: 2px solid #b99a59;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 900px;
+    line-height: 1.8;
+}
+
+#captains-quarters h2 {
+    color: #e4c477;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+#captains-quarters ol {
+    padding-left: 35px;
+}
+
+#captains-quarters li {
+    padding: 4px 0;
+    
+}
+
+.amenities-layout {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.amenities-layout ol {
+    flex: 1;
+    padding-left: 35px;
+    margin: 0;
+}
+
+.amenities-layout li {
+    padding: 4px 0;
+}
+
+.amenities-layout img {
+    width: 40%;
+    max-width: 350px;
+    height: auto;
+    object-fit: contain;
+    border: 2px solid #b99a59;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    float: none;
+}
+
+@media screen and (max-width: 650px) {
+    .amenities-layout {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .amenities-layout img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+#knights-barracks {
+    background-color: #19231d;
+    color: #f4ead5;
+    border: 2px solid #b99a59;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 900px;
+    line-height: 1.8;
+}
+
+#knights-barracks h2 {
+    color: #e4c477;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+#knights-barracks .amenities-layout {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+#knights-barracks .amenities-layout ol {
+    flex: 1;
+    padding-left: 35px;
+    margin: 0;
+}
+
+#knights-barracks .amenities-layout li {
+    padding: 4px 0;
+}
+
+#knights-barracks .amenities-layout img {
+    width: 40%;
+    max-width: 350px;
+    height: auto;
+    object-fit: contain;
+    border: 2px solid #b99a59;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    float: none;
+}
+
+@media screen and (max-width: 650px) {
+    #knights-barracks .amenities-layout {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #knights-barracks .amenities-layout img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+#squires-hold {
+    background-color: #19231d;
+    color: #f4ead5;
+    border: 2px solid #b99a59;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 900px;
+    line-height: 1.8;
+}
+
+#squires-hold h2 {
+    color: #e4c477;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+#squires-hold .amenities-layout {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+#squires-hold .amenities-layout ol {
+    flex: 1;
+    padding-left: 35px;
+    margin: 0;
+}
+
+#squires-hold .amenities-layout li {
+    padding: 4px 0;
+}
+
+#squires-hold .amenities-layout img {
+    width: 40%;
+    max-width: 350px;
+    height: auto;
+    border: 2px solid #b99a59;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    float: none;
+}
+
+@media screen and (max-width: 650px) {
+    #squires-hold .amenities-layout {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #squires-hold .amenities-layout img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.squires-description {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    overflow-wrap: break-word;
+    margin: 10px;
+}
+
+
+/* Shared description styling */
+.knights-description,
+.captains-description {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    overflow-wrap: break-word;
+    margin: 10px;
+}
+
+/* Knight's Barracks box */
+#knights-barracks {
+    background-color: #19231d;
+    color: #f4ead5;
+    border: 2px solid #b99a59;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 900px;
+    line-height: 1.8;
+}
+
+#knights-barracks h2 {
+    color: #e4c477;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+/* Captain's Quarters box */
+#captains-quarters {
+    background-color: #19231d;
+    color: #f4ead5;
+    border: 2px solid #b99a59;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 900px;
+    line-height: 1.8;
+}
+
+#captains-quarters h2 {
+    color: #e4c477;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+/* Amenities layout for both rooms */
+#knights-barracks .amenities-layout,
+#captains-quarters .amenities-layout {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+#knights-barracks .amenities-layout ol,
+#captains-quarters .amenities-layout ol {
+    flex: 1;
+    padding-left: 35px;
+    margin: 0;
+}
+
+#knights-barracks .amenities-layout li,
+#captains-quarters .amenities-layout li {
+    padding: 4px 0;
+}
+
+#knights-barracks .amenities-layout img,
+#captains-quarters .amenities-layout img {
+    width: 40%;
+    max-width: 350px;
+    height: auto;
+    object-fit: contain;
+    border: 2px solid #b99a59;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    float: none;
+}
+
+/* Mobile-friendly layout */
+@media screen and (max-width: 650px) {
+    #knights-barracks .amenities-layout,
+    #captains-quarters .amenities-layout {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #knights-barracks .amenities-layout img,
+    #captains-quarters .amenities-layout img {
+        width: 100%;
+        max-width: 100%;
+    }
+}

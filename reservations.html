@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Reservations | The Chateau Inn</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Make a reservation at The Chateau Inn and select your room and additional guest services.">
+
+    <link href="styles/styles.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="wrapper">
+
+    <header>
+        <div class="branding">
+            <img src="images/Logo.png"
+                 alt="The Chateau Inn Phoenix Logo"
+                 id="logo">
+            <h1>The Chateau Inn</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms/Captians_Quarters.html">Captain's Quarters</a></li>
+            <li><a href="rooms/Knights_Barracks.html">Knight's Barracks</a></li>
+            <li><a href="rooms/Squires_Hold.html">The Squire's Hold</a></li>
+            <li><a href="events/The_Gatherings.html">The Gatherings</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="reservations">
+
+            <h2>Reserve Your Stay</h2>
+
+            <p>
+                Welcome to The Chateau Inn! Complete the form below
+                to request your stay and select additional services
+                for your adventure.
+            </p>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Guest Information</legend>
+
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" name="firstname" required>
+
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="lastname" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Reservation Details</legend>
+
+                    <label for="checkin">Check-in Date:</label>
+                    <input type="date" id="checkin" name="checkin" required>
+
+                    <label for="checkout">Check-out Date:</label>
+                    <input type="date" id="checkout" name="checkout" required>
+
+                    <label for="guests">Number of Guests:</label>
+                    <input type="number" id="guests" name="guests" min="1" max="10" required>
+
+                    <label for="room">Select a Room:</label>
+                    <select id="room" name="room">
+                        <option value="squires">Squire's Hold $150</option>
+                        <option value="knights">Knight's Barracks $75</option>
+                        <option value="captains">Captain's Quarters $300</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Services</legend>
+
+                    <p>Select any additional services you would like:</p>
+
+                    <input type="checkbox" id="breakfast" name="services" value="breakfast">
+                    <label for="breakfast">Royal Breakfast $50</label>
+
+                    <br>
+
+                    <input type="checkbox" id="horseback" name="services" value="horseback">
+                    <label for="horseback">Horseback Excursion $350</label>
+
+                    <br>
+
+                    <input type="checkbox" id="fireplace" name="services" value="fireplace">
+                    <label for="fireplace">Private Fireplace Package $100</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Special Requests</legend>
+
+                    <label for="requests">Additional Comments:</label>
+                    <textarea id="requests" name="requests" rows="5" cols="40"
+                    placeholder="Tell us about any special requests..."></textarea>
+                </fieldset>
+
+                <button type="submit">Submit Reservation</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        Copyright &copy; 2024 WebMaster
+    </footer>
+
+</div>
+</body>
+</html>

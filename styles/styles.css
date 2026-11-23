@@ -1,0 +1,845 @@
+header, nav, main, footer { display: block; }
+body { background-color: #320000;
+       font-family: "Palatino Linotype", Palatino, serif;
+}
+
+#intro {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(25, 35, 29, 0.92);
+    border: 2px solid #b99a59;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(185, 154, 89, 0.3);
+}
+
+#intro h2 {
+    font-family: Georgia, serif;
+    font-size: 2em;
+    color: #e4c477;
+    text-align: center;
+    text-shadow: 2px 2px 5px #000;
+}
+
+#intro p {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #f4ead5;
+    text-align: left;
+}
+#wrapper {
+    width: 90%;
+    max-width: 960px;
+    margin: auto;
+    background-color: #10152E;
+    color: #FFF4D6;
+}
+/* Shared header for every page */
+header {
+    min-height: 110px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    background-color: #10152E;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-height: 85px;
+}
+
+.branding img {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.branding h1 {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    background-image: none;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2em;
+    color: #d4af62;
+    text-shadow: 3px 3px 3px #90745D;
+}
+
+
+h1 { background-image: url(images/logo.gif);
+     background-repeat: no-repeat;
+     background-color:  #10152E;
+	 font-family: Georgia, "Times New Roman", serif;
+	 padding-top: 20px;
+	 text-shadow: 3px 3px 3px #90745D;
+	 margin-bottom: 0;
+
+     
+     
+#logo {
+    width: 120px;
+    height: auto;
+    display: block;
+    background: transparent;
+    object-fit: contain;
+}
+
+        
+}
+nav { padding-top: 10px;
+      width: 100%; 
+}
+nav ul { list-style-type: none; 
+       padding-left: 20px;
+	   display: flex; 
+	   gap: 25px; 
+	 }
+nav li { padding-bottom: 5px;
+       font-weight: bold;
+}
+nav a { text-decoration: none; }
+nav a:link { color: #f5f3f3; }
+nav a:visited{ color: #8f4d17; }
+nav a:hover { color: #435f0e; }
+
+
+main { background-color: #221246;
+          padding: 1px 20px 20px 20px;   
+		  min-height: 300px;
+		  text-align: left;
+}
+main img {
+    display: block;
+    float: none;
+    margin: 20px auto;
+    padding: 0;
+}
+
+
+footer { background-color: #221246;
+       
+       padding: 20px;
+       text-align: center;
+	   font-size: small;
+	   font-style: italic;
+}
+
+#captains-quarters {
+    background-color: #19231d;
+    color: #f4ead5;
+    border: 2px solid #b99a59;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 900px;
+    line-height: 1.8;
+}
+
+#captains-quarters h2 {
+    color: #e4c477;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+#captains-quarters ol {
+    padding-left: 35px;
+}
+
+#captains-quarters li {
+    padding: 4px 0;
+    
+}
+
+.amenities-layout {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.amenities-layout ol {
+    flex: 1;
+    padding-left: 35px;
+    margin: 0;
+}
+
+.amenities-layout li {
+    padding: 4px 0;
+}
+
+.amenities-layout img {
+    width: 40%;
+    max-width: 350px;
+    height: auto;
+    object-fit: contain;
+    border: 2px solid #b99a59;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    float: none;
+}
+
+@media screen and (max-width: 650px) {
+    .amenities-layout {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .amenities-layout img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+#knights-barracks {
+    background-color: #19231d;
+    color: #f4ead5;
+    border: 2px solid #b99a59;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 900px;
+    line-height: 1.8;
+}
+
+#knights-barracks h2 {
+    color: #e4c477;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+#knights-barracks .amenities-layout {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+#knights-barracks .amenities-layout ol {
+    flex: 1;
+    padding-left: 35px;
+    margin: 0;
+}
+
+#knights-barracks .amenities-layout li {
+    padding: 4px 0;
+}
+
+#knights-barracks .amenities-layout img {
+    width: 40%;
+    max-width: 350px;
+    height: auto;
+    object-fit: contain;
+    border: 2px solid #b99a59;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    float: none;
+}
+
+@media screen and (max-width: 650px) {
+    #knights-barracks .amenities-layout {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #knights-barracks .amenities-layout img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+#squires-hold {
+    background-color: #19231d;
+    color: #f4ead5;
+    border: 2px solid #b99a59;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 900px;
+    line-height: 1.8;
+}
+
+#squires-hold h2 {
+    color: #e4c477;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+#squires-hold .amenities-layout {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+#squires-hold .amenities-layout ol {
+    flex: 1;
+    padding-left: 35px;
+    margin: 0;
+}
+
+#squires-hold .amenities-layout li {
+    padding: 4px 0;
+}
+
+#squires-hold .amenities-layout img {
+    width: 40%;
+    max-width: 350px;
+    height: auto;
+    border: 2px solid #b99a59;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    float: none;
+}
+
+@media screen and (max-width: 650px) {
+    #squires-hold .amenities-layout {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #squires-hold .amenities-layout img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.squires-description {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    overflow-wrap: break-word;
+    margin: 10px;
+}
+
+
+/* Shared description styling */
+.knights-description,
+.captains-description {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    overflow-wrap: break-word;
+    margin: 10px;
+}
+
+/* Knight's Barracks box */
+#knights-barracks {
+    background-color: #19231d;
+    color: #f4ead5;
+    border: 2px solid #b99a59;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 900px;
+    line-height: 1.8;
+}
+
+#knights-barracks h2 {
+    color: #e4c477;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+/* Captain's Quarters box */
+#captains-quarters {
+    background-color: #19231d;
+    color: #f4ead5;
+    border: 2px solid #b99a59;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 900px;
+    line-height: 1.8;
+}
+
+#captains-quarters h2 {
+    color: #e4c477;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+/* Amenities layout for both rooms */
+#knights-barracks .amenities-layout,
+#captains-quarters .amenities-layout {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+#knights-barracks .amenities-layout ol,
+#captains-quarters .amenities-layout ol {
+    flex: 1;
+    padding-left: 35px;
+    margin: 0;
+}
+
+#knights-barracks .amenities-layout li,
+#captains-quarters .amenities-layout li {
+    padding: 4px 0;
+}
+
+#knights-barracks .amenities-layout img,
+#captains-quarters .amenities-layout img {
+    width: 40%;
+    max-width: 350px;
+    height: auto;
+    object-fit: contain;
+    border: 2px solid #b99a59;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    float: none;
+}
+
+/* Mobile-friendly layout */
+@media screen and (max-width: 650px) {
+    #knights-barracks .amenities-layout,
+    #captains-quarters .amenities-layout {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #knights-barracks .amenities-layout img,
+    #captains-quarters .amenities-layout img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Navigation link interaction effects */
+
+/* When the mouse moves over a navigation link */
+nav a:hover {
+    color: #e4c477;
+    background-color: #19231d;
+    text-decoration: underline;
+}
+
+/* When a navigation link receives keyboard focus */
+nav a:focus {
+    color: #ffffff;
+    outline: 2px solid #b99a59;
+    outline-offset: 3px;
+}
+
+/* While a navigation link is being clicked */
+nav a:active {
+    color: #b99a59;
+    background-color: #2d3b30;
+}
+
+/* WEEKEND EVENTS PAGE */
+
+.events-heading {
+    font-family: Georgia, serif;
+    font-size: 2.2em;
+    color: #e4c477;
+    text-align: center;
+    margin-top: 30px;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.events-intro {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    color: #f4ead5;
+    text-align: center;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 20px auto 35px;
+}
+
+/* Holds all three event boxes */
+
+.events-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Individual event rectangles */
+
+.event-box {
+    background-color: #19231d;
+    color: #f4ead5;
+    border: 2px solid #b99a59;
+    border-radius: 12px;
+
+    padding: 30px;
+    margin: 30px 0;
+
+    min-height: 180px;
+
+    box-shadow: 0 0 15px rgba(185, 154, 89, 0.25);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Event titles */
+
+.event-box h2 {
+    font-family: Georgia, serif;
+    font-size: 1.8em;
+    color: #e4c477;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Event descriptions */
+
+.event-box p {
+    font-family: Georgia, serif;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: left;
+}
+
+/* Event dates */
+
+.event-box .event-time {
+    color: #d4af62;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Hover effect */
+
+.event-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(185, 154, 89, 0.5);
+}
+
+/* Smaller screens */
+
+@media screen and (max-width: 650px) {
+
+    .event-box {
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+    .event-box h2 {
+        font-size: 1.4em;
+    }
+
+    .event-box p {
+        font-size: 16px;
+    }
+
+}
+
+
+/* EVENT BOX IMAGE LAYOUT */
+
+.event-box {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background-color: #19231d;
+    color: #f4ead5;
+    border: 2px solid #b99a59;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 30px auto;
+    min-height: 230px;
+    box-shadow: 0 0 15px rgba(185, 154, 89, 0.25);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* EVENT PICTURES */
+
+.event-box img {
+    width: 38%;
+    height: 220px;
+    object-fit: cover;
+    border: 2px solid #b99a59;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+/* EVENT DESCRIPTION */
+
+.event-content {
+    flex: 1;
+}
+
+.event-content h2 {
+    color: #e4c477;
+    font-family: Georgia, serif;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+.event-content p {
+    color: #f4ead5;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.event-content .event-time {
+    color: #d4af62;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* HOVER EFFECT */
+
+.event-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(185, 154, 89, 0.5);
+}
+
+/* MOBILE DISPLAY */
+
+@media screen and (max-width: 650px) {
+
+    .event-box {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .event-box img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+#reservations {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #19231d;
+    color: #f4ead5;
+    border: 2px solid #b99a59;
+    border-radius: 12px;
+    line-height: 1.7;
+}
+
+#reservations h2 {
+    color: #e4c477;
+    font-family: Georgia, serif;
+    text-align: center;
+    font-size: 2em;
+}
+
+#reservations p {
+    text-align: center;
+}
+
+#reservations fieldset {
+    border: 1px solid #b99a59;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#reservations legend {
+    color: #e4c477;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#reservations label {
+    display: inline-block;
+    margin: 8px 0;
+}
+
+#reservations input:not([type="checkbox"]),
+#reservations select,
+#reservations textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    border: 1px solid #b99a59;
+    border-radius: 5px;
+    font-family: Georgia, serif;
+}
+
+#reservations input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+#reservations button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 25px;
+    background-color: #b99a59;
+    color: #10152E;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#reservations button:hover {
+    background-color: #e4c477;
+}
+
+/* CONTACT PAGE */
+
+#contact {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #19231d;
+    color: #f4ead5;
+    border: 2px solid #b99a59;
+    border-radius: 12px;
+    line-height: 1.8;
+}
+
+#contact h2,
+#contact h3 {
+    color: #e4c477;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+#contact p {
+    text-align: center;
+    font-size: 17px;
+}
+
+#contact a {
+    color: #e4c477;
+}
+
+#contact .contact-image {
+    display: block;
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    margin: 20px auto;
+    border: 2px solid #b99a59;
+    border-radius: 10px;
+}
+
+/* ROOM RATES TABLE */
+
+#room-rates {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #19231d;
+    color: #f4ead5;
+    border: 2px solid #b99a59;
+    border-radius: 12px;
+}
+
+#room-rates h2 {
+    color: #e4c477;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+#room-rates p {
+    text-align: center;
+    line-height: 1.7;
+}
+
+#room-rates table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#room-rates caption {
+    color: #e4c477;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#room-rates th,
+#room-rates td {
+    border: 1px solid #b99a59;
+    padding: 12px;
+    text-align: center;
+}
+
+#room-rates th {
+    background-color: #10152E;
+    color: #e4c477;
+}
+
+#room-rates tr:nth-child(even) {
+    background-color: #26382d;
+}
+
+@media screen and (max-width: 600px) {
+    #room-rates {
+        padding: 12px;
+    }
+
+    #room-rates th,
+    #room-rates td {
+        padding: 8px 4px;
+        font-size: 14px;
+    }
+}
+/* PHASE 4 - RESPONSIVE DESIGN */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 650px) {
+
+    #wrapper {
+        width: 100%;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    .branding {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+        padding-left: 10px;
+    }
+
+    nav li {
+        padding: 5px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    #intro,
+    #contact,
+    #reservations,
+    #room-rates {
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    .events-container {
+        padding: 5px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+
+}
